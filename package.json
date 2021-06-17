@@ -3,17 +3,17 @@
 	"displayName": "About Me",
 	"description": "Shows a webstie you want to promote when demoing in VSCode status bar",
 	"version": "0.0.1",
-	"publisher": "HugeServices Dawid Chroscielski",
+	"publisher": "HugeServices Dawid Chróścielski",
 	"author": {
 		"name": "Dawid Chróscielski",
 		"url": "https://www.chroscielski.pl"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-extension-samples"
+		"url": "https://github.com/Chroscielski/vscode-aboutme"
 	},
 	"bugs": {
-		"url": "https://github.com/Microsoft/vscode-extension-samples/issues"
+		"url": "https://github.com/Chroscielski/vscode-aboutme/issues"
 	},
 	"engines": {
 		"vscode": "^1.32.0"
@@ -27,27 +27,27 @@
 	"contributes": {
 		"configuration":[
 			{
-				"title": "About Me",
+				"title": "AboutMe",
 				"properties": {
 					"aboutMe.title": {
 						"type": "string",
 						"default": "$(globe) www.chroscielski.pl",
-						"description": "Text diplayed in status bar. Possible icons: https://code.visualstudio.com/api/references/icons-in-labels#icon-listing"
+						"markdownDescription": "Text diplayed in status bar. [Possible icons](shttps://code.visualstudio.com/api/references/icons-in-labels#icon-listing)."
 					},
 					"aboutMe.location": {
 						"type": "string",
 						"default": "left",
 						"enum": ["left", "right"],
-						"enumDescriptions": [
-						  "Adds a heatmap indicator on the left edge of the gutter blame annotations",
-						  "Adds a heatmap indicator on the right edge of the gutter blame annotations"
+						"markdownEnumDescriptions": [
+						  "Adds title on the left side of status bar",
+						  "Adds title on the right side of status bar"
 						]
 					},
 					"aboutMe.url": {
 						"type": "string",
 						"default": "https://www.chroscielski.pl",
 						"format": "url",
-						"description": "TODO"
+						"markdownDescription": "TODO"
 					}
 				}
 			}
